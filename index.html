@@ -24,6 +24,16 @@
     ></script>
 
     <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+    crossorigin="anonymous"
+  />
 
     <!-- CSS stylesheets -->
     <link rel="stylesheet" href="css/index.css" />
@@ -42,7 +52,7 @@
           aria-expanded="true"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon hamburger-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -51,7 +61,7 @@
               <a class="nav-link" href="#menu">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#pricing">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#cta">About Us</a>
@@ -68,7 +78,7 @@
 
         <!-- title and cupcakes -->
         <div class="col-lg-5 col-md-5 intro-section intro-title">
-          <h2>
+          <h2 class="brand-name">
             The Bliss
             <br />
             Cakehouse
@@ -86,7 +96,8 @@
 
         <div class="col-lg-5 col-md-5 intro-section">
           <img
-            src="https://www.yourcupofcake.com/wp-content/uploads/2015/03/Bunny-Ear-Cupcakes-500x375.jpg"
+          class="intro-img"
+            src="images/featured-cake.png"
             alt="Cup Cakes"
           />
         </div>
@@ -308,6 +319,8 @@
         id="reviewsCarousel"
         class="carousel slide reviews-carousel"
         data-ride="carousel"
+        data-pause="hover"
+        data-interval=3000
       >
         <ol class="carousel-indicators">
           <li
@@ -407,10 +420,37 @@
 
     <section id="contact">
       <div class="contact-container">
-        <h3>Contact Us</h3>
-        <p>8693886401</p>
-        <p>cakehouse@gmail.com</p>
-      </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 contact-info">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-phone-alt"></i> +91 8693 886401</p>
+            <p><i class="fas fa-envelope"></i> cakehouse@gmail.com</p>
+           </div>
+   
+           <div class="col-lg-6 col-md-6 feedback-input">
+            <h3>Leave Us a Comment</h3>
+            <form action="mailto:utkarshkore98@gmail.com">
+              <div class="form-group">
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Add your feedback">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+           </div>
+        </div>
+
+        <footer id="footer">
+          <div class="social-links">
+            <i class="fab fa-facebook-f fa-1x social-icon"></i>
+            <i class="fab fa-twitter fa-1x social-icon"></i>
+            <i class="fab fa-instagram fa-1x social-icon"></i>
+            <i class="fas fa-envelope fa-1x social-icon"></i>
+          </div>
+          <!-- <p>© Copyright 2020 The Bliss</p> -->
+          <p class="designed-by">Designed with ❤ by Achal</p>
+        </footer>
+       </div>
     </section>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
