@@ -25,7 +25,6 @@ a {
 
 .main-content p {
     margin: 0 auto;
-    
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -202,6 +201,10 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     padding: 0 2%;
     line-height: 3;
+}
+
+.client p{
+    line-height: 1;
 }
 
 .slider-indicators {
