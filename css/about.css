@@ -1,0 +1,245 @@
+/* ********************************* Tag Selectors ************************* */
+@font-face {
+    font-family: 'snap';
+    src: url(fonts/snap-font.ttf) format('truetype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'rockwell';
+    src: url(fonts/Rockwell_MT_Condensed_Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+html, body {
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    font-family: 'Kameron', serif;
+    background-color: #FFF9F9;
+}
+
+a {
+    color: palevioletred;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+}
+
+.bio-content h1 {
+    color: black;
+    font-size: 3.5rem;
+    line-height: 0.8;
+}
+
+.company-bio h3 {
+    color: #FF7373;
+    text-align: start;
+}
+
+/* Social */
+
+.section-break {
+    border: dotted #FF7373 8px;
+    border-bottom: none;
+    width: 4%;
+    margin: 20px auto;
+}
+/* ********************************* ID Selectors ************************* */
+#bio{
+    text-align: center;
+}
+
+#footer {
+    text-align: center;
+}
+
+/* ********************************* Class Selectors ************************* */
+
+/* global */
+.section-title {
+    margin: 30px 30px;
+    font-weight: 700;
+}
+
+/* sidebar */
+.sidebar {
+    height: 95vh;
+    background-color: #FEBEC1;
+}
+
+.sidebar-title{
+    position: relative;
+    top: 60%;
+    transform: rotate(-90deg);
+    margin: 0px 0 20px 100px;
+    font-size: 6.5rem;
+    color: palevioletred;
+    font-weight: bold;
+}
+
+/* Bio Content */
+.bio-content {
+    text-align: start;
+    margin: 5% 0;
+    padding: 20px 3%;
+}
+
+.company-desc {
+    width: 90%;
+    position: relative;
+    padding: 40px 0;
+}
+
+.focus-hr{
+    width: 10%;
+    border: none;
+    height: 3px;
+    color: black; /* old IE */
+    background-color: black; /* Modern Browsers */
+    float: left;
+    margin: 50px 30px 30%;
+}
+
+.company-bio {
+    width: 80%;
+    padding: 0 20px;
+}
+
+.big-strip {
+    width: 67%;
+    height: 12px;
+    background-color: #D81515;
+    position: absolute;
+    left: 40%;
+    top: 0px;
+    transform: rotate(215deg);
+}
+
+.small-strip {
+    width: 52%;
+    height: 12px;
+    background-color: #F63131;
+    position: absolute;
+    left: 53%;
+    top: 0px;
+    transform: rotate(215deg);
+}
+
+/* Profile */
+.profile-container {
+    overflow: hidden;
+    padding: 0 0 150px 20px;
+}
+
+.profile-img {
+    width: 300px;
+    height: 250px;
+}
+
+.personal-info {
+    background-color: white;
+    position: relative;
+    width: 300px;
+    padding: 10px;
+    box-shadow: -2px 2px 3px 1px grey;
+    top: -120px;
+    left: 260px;
+}
+
+/* ********************************* Sudo Selectors ************************* */
+
+.explore-btn:hover {
+    background-color: brown;
+    color: #fff;
+    border: none;
+}
+
+a:hover {
+    color: brown;
+}
+
+.occasion-card:hover{
+    box-shadow: 2px 2px 10px 3px pink;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px pink;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: palevioletred;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: brown;
+    border-radius: 20px;
+}
+
+/* ********************************* Responsiveness ************************* */
+@media (max-width: 640px) {
+    .sidebar{
+        display: none;
+    }
+
+    .focus-hr {
+        display: none;
+    }
+
+    .company-bio {
+        clear: left;
+        padding: 0 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .bio-content {
+        text-align: center;
+    }
+
+    .company-bio h3 {
+        text-align: center;
+    }
+
+    .company-desc {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .sidebar{
+        display: none;
+    }
+
+    .focus-hr {
+        display: none;
+    }
+
+    .company-bio {
+        clear: left;
+        padding: 0 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .company-desc {
+        text-align: center;
+        width: 100%;
+    }
+
+    .company-bio h3 {
+        text-align: center;
+    }
+
+    .bio-content {
+        text-align: center;
+    }
+}
