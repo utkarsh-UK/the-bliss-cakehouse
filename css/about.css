@@ -106,6 +106,45 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
+/* navbar */
+.custom-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.custom-navbar-scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FEBEC1;
+    box-shadow: 0 1px 10px 1px #626262;
+    color: black;
+}
+
+.nav-toggle{
+    background-color: #fea5b6;
+}
+
+.nav-brand-title{
+    margin: 0 8% 0 2%;
+    font-weight: bold;
+}
+
+.nav-brand-title-scrolled{
+    margin: 0 8% 0 2%;
+    font-weight: bold;
+    color: black;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+  
+.navbar-toggler {
+    border-color: rgb(255,102,203);
+} 
+
 /* Bio Content */
 .bio-content {
     text-align: start;
