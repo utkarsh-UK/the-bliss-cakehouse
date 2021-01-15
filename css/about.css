@@ -34,6 +34,14 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 0.8;
 }
 
+.sparkle {
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .company-bio h3 {
     color: #FF7373;
     text-align: start;
@@ -173,26 +181,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 20px;
 }
 
-.big-strip {
-    width: 67%;
-    height: 12px;
-    background-color: #D81515;
-    position: absolute;
-    left: 40%;
-    top: 0px;
-    transform: rotate(215deg);
-}
-
-.small-strip {
-    width: 52%;
-    height: 12px;
-    background-color: #F63131;
-    position: absolute;
-    left: 53%;
-    top: 0px;
-    transform: rotate(215deg);
-}
-
 /* Profile */
 
 .profile-container {
@@ -318,6 +306,11 @@ a:hover {
 
     .contact-container {
         text-align: center;
+    }
+        
+    .sparkle {
+        width: 40%;
+        height: 40%;
     }
 }
 
